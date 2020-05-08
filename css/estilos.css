@@ -1,0 +1,724 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    text-decoration: none;
+}
+
+body { 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+
+.texto-blanco {
+    font-weight: 400;
+    color: #fff;
+}
+
+.texto-negro {
+	color: #000;
+}
+
+.texto-grisoscuro {
+	color: rgb(40, 40, 40);
+}
+
+
+
+
+@font-face {
+    font-family: BLOWUP PERSONAL USE;
+    src: url(USE.ttf);
+  }
+  
+  h1 {
+    font-family: BLOWUP PERSONAL USE;
+  }
+
+
+/*clases de fullpage.js*/
+
+#fp-nav ul li a span {
+    background: orange;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: orange;
+}
+
+
+/*menu de navegacion*/
+
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    font-family: helvetica, sans-serif;
+    font-size: 19px;
+    color: #c2c2c2;
+    transition: .5s ease;
+}
+
+.nav li.active {
+    border-bottom: 2px solid orange;
+}
+
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu li.active a,
+.menu li:hover a {
+    color: orange;
+}
+
+/*header*/
+
+.header {
+    background: rgb(4, 4, 20);
+    background: url("../img/Web\ Designer_Carlos\ Javier.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.header texto {
+    text-align: center;
+    position: relative;
+}
+
+.header .titulo {
+    font-size: 60px;
+    color: white;
+    position:relative;
+    justify-content: center;
+    bottom: 0px;
+}
+
+.header .sita {
+    position:relative;
+    justify-content: center;
+    bottom: 0px;
+}
+
+
+
+.header p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.header .contenedor-icono {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    animation: bajar-subir 1s ease infinite;
+}
+
+.header .contenedor-icono a {
+    font-size: 25px;
+}
+
+/*animacion*/
+@keyframes bajar-subir{
+    0% { transform: translateY(10px); }
+    25% { transform: translateY(0px); }
+    100% { transform: translateY(10px); }
+}
+
+
+
+/*about me*/
+
+.sobremi {
+    background:white;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.sobremi .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sobremi .datoPersonal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 2%;
+}
+
+.sobremi .datoPersonal .avatar {
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.sobremi .datoPersonal .avatar-nombre {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.sobremi .datoPersonal .avatar-carrera {
+    font-size: 20px;
+    color: orange;
+}
+
+.sobremi .texto-comun {
+    width: 60%;
+}
+
+.sobremi .texto-comun a {
+    color: #c2c2c2;
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.sobremi .texto-comun a:hover {
+    color: gray;
+}
+
+.texto-normal {
+    display: none;
+}
+
+.texto-mediano {
+    font-size: 25px;
+    line-height: 140%;
+    text-align: center;
+}
+
+
+/*portafolio*/
+
+.portafolio {
+    background: yellow;
+    /*background: url("../img/boceto.jpg");*/
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    padding: 2% 2%;
+}
+
+.portafolio .trabajos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.portafolio .trabajos .caja {
+    width: 22%;
+    text-align: center;
+}
+
+.caja p {
+    margin-top: 5%;
+    font-size: 17px;
+}
+
+.caja img {
+    width: 180px;
+}
+
+.caja img:hover {
+    padding: 5px;
+}
+
+/*footer*/
+
+
+.footer {
+    background-color: black;
+}
+
+.footer .texto-naranja {
+    text-transform: uppercase;
+    font-size: 55px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer h3 {
+    /*opacity: 0;*/
+    font-family: "oswald", sans-serif;
+    transition: .3s ease all;
+    margin-top: 80px;
+}
+
+.footer .redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 40px;
+}
+
+.footer .redes-sociales a {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    background: white;
+    color: #30313a;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0px 20px;
+}
+
+.footer .facebook i { color: #3b5998; }
+.footer .linkedin i { color: #0072b1; }
+.footer .whatsapp i { color: #00bb2d; }
+
+.footer .facebook:hover { background: #3b5998; }
+.footer .linkedin:hover { background: #0072b1; }
+.footer .whatsapp:hover { background: #00bb2d; }
+
+.footer .facebook:hover i { color: white; }
+.footer .linkedin:hover i { color: white; }
+.footer .whatsapp:hover i { color: white; }
+
+
+.formulario {
+    box-sizing: border-box;
+    width: 80%;
+    height: 80px;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.otro-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 600px;
+} 
+
+input {
+    padding: 2%;
+    margin: 5px;
+}
+
+textarea {
+    padding: 2%;
+    margin: 5px;
+    font-family: lato, sans-serif;
+}
+
+.medida-chica {
+    width: 44.6%;
+}
+
+.medida-media {
+    width: 95%;
+}
+
+.medida-grande {
+    width: 68%;
+    height: 85%;   
+}
+
+.boton-enviar {
+    background: white;
+    color: gray;
+    height: 85%; 
+}
+
+.boton-enviar:hover {
+    background: orange;
+    color: white;
+    border-color: orange;
+}
+
+.saludo-bienvenida {
+    width: 37%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.año-creacion {
+    width: 36%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mediaqueries*/
+
+@media screen and (max-width: 768px) {
+
+    .header .titulo {
+        font-size: 50px;
+        margin: 40px;
+    }
+
+    .header p {
+        font-size: 15px;        
+    }
+
+
+
+    /*sobremi*/
+
+    .sobremi .contenedor {
+        flex-direction: column;
+    }
+    
+    .sobremi .datoPersonal {
+        margin: auto;
+        align-items: center;
+    }
+    
+    .sobremi .datoPersonal .avatar {
+        width: 150px;    
+    }
+    
+    .sobremi .datoPersonal .avatar-nombre {
+        font-size: 17px;
+    }
+    
+    .sobremi .datoPersonal .avatar-carrera {
+        font-size: 13px;
+    }
+
+    .sobremi .texto-comun {
+        width: 100%;
+    }
+    
+    .texto-mediano {
+        font-size: 17px;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: justify;
+    }
+ 
+
+    /*portafolio*/
+
+    
+    .portafolio .trabajos .caja {
+        width: 45%;
+    }
+
+    .portafolio .trabajos .caja h3 {
+        margin-top: -40px;
+    }
+    
+  
+
+    /*footer*/
+
+    .footer .texto-naranja {
+        font-size: 40px;
+        margin-top: 120px;
+    }
+
+    .footer .redes-sociales {
+        font-size: 30px;
+    }
+
+    .footer .redes-sociales a {
+        width: 60px;
+        height: 60px;
+    }
+
+    .formulario {
+        margin-top: 100px;
+    }
+    
+    .otro-formulario {
+        width: 600px;
+    } 
+
+    .saludo-bienvenida {
+        width: 75%;
+        font-size: 12px;
+    }
+    
+    .año-creacion {
+        width: 65%;
+        font-size: 10px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 576px) {
+        
+        .menu li a,
+        .menu li.active a {
+            font-size: 15px;
+        }
+
+        .header .titulo {
+            font-size: 50px;
+            line-height: 180%;
+        }
+
+        .header p {
+            font-size: 14px;
+            width: 50%;
+            margin: auto;
+        }
+
+        .header .contenedor-icono {
+            margin:auto;           
+        }
+        
+
+        /*sobremi*/
+     
+        
+        /*portafolio*/
+
+
+    
+        .portafolio .trabajos {
+            margin-top: 0px;           
+        }
+
+        .caja img {
+            width: 100%;
+        }
+    
+        .caja h3 {
+            font-size: 20px;
+        }
+
+        .caja p {
+            display: none;
+        }
+
+
+        /*footer*/
+
+        .footer .texto-naranja {
+            font-size: 35px;
+            margin-top: 0px;
+        }
+    
+        .formulario {
+            margin-top: 50px;
+            width: 300px;
+            display: block;            
+        }
+        
+        .otro-formulario {
+            width: 300px;
+            justify-content: center;
+            margin-left: -4px;
+        }
+        
+        .medida-chica {
+            width: 45%;
+        }
+        
+        .medida-media {
+            width: 94%;
+        }
+        
+        .medida-grande {
+            width: 94%;
+            height: 80px;    
+        }
+        
+        .boton-enviar {
+            width: 45%;
+        }
+            
+        .saludo-bienvenida {
+            display: none;
+        }
+        
+        .año-creacion {
+            display: none;
+        }
+
+    }
+
+
+
+
+
+    @media screen and (max-width: 425px) {
+        .menu li a,
+        .menu li.active a {
+            font-size: 12px;
+            margin: 0px -7px;
+        }
+
+        .nav {
+            background: black;
+        }
+
+        .header .titulo {
+            font-size: 40px;
+            line-height: 200%;
+        }
+        
+        .header .contenedor-icono {
+            margin-left: -35px;           
+        }
+        
+        #fp-nav ul li a span {
+            display: none;
+        }        
+          
+
+        .header .texto p {
+            font-size: 0px;
+        }
+
+        .sobremi h2 {
+            font-size: 25px;
+        }
+
+        .sobremi p {
+            font-size: 12px;            
+        }
+
+        .portafolio h2 {
+            font-size: 25px;
+        }
+    
+    
+        .portafolio .trabajos {
+            columns: 1;                      
+        }
+    
+        .caja h3 {
+            font-size: 25px;
+        }
+
+        .caja p {
+            font-size: 18px;
+            margin: 0 5%;
+        }
+
+        .formulario {
+            margin-top: 30px;
+            width: 250px;            
+        }
+
+        .otro-formulario {
+            width: 250px;
+            margin-left: -2px;
+        }
+
+        .medida-chica {
+            width: 94%;
+        }
+        
+        .medida-media {
+            width: 94%;
+        }
+        
+        .medida-grande {
+            width: 94%;    
+        }
+        
+        .boton-enviar {
+            width: 94%;
+        }
+
+        .año-creacion {
+            font-size: 8px;
+            margin: -10px 75px;
+        }
+
+
+    }
+
+}
