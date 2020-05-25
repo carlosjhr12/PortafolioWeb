@@ -28,7 +28,7 @@ header .categorias {
 
 header .categorias a {
     color: #9b9b9b;
-    margin: 10px 20px;
+    margin: 10px 15px;
     font-size: 18px;
     font-weight: 700;
 }
@@ -96,6 +96,7 @@ header .categorias a.activo {
 
 .overlay img {
     max-width: 80%;
+
     border-radius: 5px;
 }
 
@@ -106,7 +107,7 @@ header .categorias a.activo {
     text-align: center;
     margin-top: 5px;
     border-radius: 5px;
-    max-width: 50%;
+    max-width: 80%;
 }
 
 .contenedor-img {
@@ -122,26 +123,60 @@ header .categorias a.activo {
     border: none;
     cursor: pointer;
     position: absolute;
-    right: -20px;   
+    right: 3%;   
 }
 
 
 /*volver a pagina principal*/
 
-.btn-volver {
+.volver-principal {
     position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    top: 30px;
+    left: 3%;
     font-size: 20px;
-    margin: 30px 120px;
 }
 
-.btn-volver:hover {
+.volver-principal a{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background: rgba(200, 200, 200, .5);
     width: 30px;
     height: 30px;
+    background: #fffff1;
+    color: #9b9b9b;
+    align-items: center;
+    justify-content: center;
     border-radius: 100px;
-    margin: 30px 110px;
+}
+
+.volver-principal i {
+    color: #9b9b9b;
+}
+
+.volver-principal a:hover{
+    background: #9b9b9b;
+}
+
+.volver-principal a:hover i{
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 629px){
+
+    header .categorias a {
+        margin: 10px 5px;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    .grid .item {
+        width: calc(50% - 20px);
+    }
+
 }
